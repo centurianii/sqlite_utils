@@ -1,6 +1,7 @@
 # sqlite_utils
 Some SQLite database utilities in php.
 --------------------------------------
+We'll try to analyze a SQLite database file.
 
 1. **Boolean return**: Let's check if a given file is SQLite:
 
