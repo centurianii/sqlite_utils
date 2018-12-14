@@ -1,6 +1,6 @@
 # sqlite_utils
 Some SQLite database utilities in php.
-======================================
+--------------------------------------
 
 Let's check if a given file is SQLite:
 
