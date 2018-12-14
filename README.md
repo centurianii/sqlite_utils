@@ -17,6 +17,9 @@ else
 2. Let's check in base 10 a array of specific properties from SQLite:
 ```
 <?php
+<?php
+$file = '/some/file.sq';
+
 $file = '/some/file.sq';
 error_log('Checking in base 10 version, encoding and number of pages SQLite::analyze($file, VERSION | PAGES | ENCODING)');
 $tmp = SQLite::analyze($file, VERSION | PAGES | ENCODING);
@@ -27,6 +30,9 @@ else
 ```
 3. Let's check in base 16 previous array of properties from SQLite:
 ```
+<?php
+$file = '/some/file.sq';
+
 error_log('Checking in base 16 version, encoding and number of pages SQLite::analyze($file, VERSION | PAGES | ENCODING)');
 $tmp = SQLite::analyze($file, VERSION | PAGES | ENCODING, 16);
 if($tmp === false)
@@ -36,6 +42,9 @@ else
 ```
 4. Let's check in base 10 a string of specific properties from SQLite:
 ```
+<?php
+$file = '/some/file.sq';
+
 error_log('Checking a stringify result in base 10 of version, encoding and number of pages SQLite::stranalyze($file, VERSION | PAGES | ENCODING)');
 $tmp = SQLite::stranalyze($file, VERSION | PAGES | ENCODING);
 if($tmp === false)
@@ -45,6 +54,9 @@ else
 ```
 5. Let's check in base 16 previous string of specific properties from SQLite:
 ```
+<?php
+$file = '/some/file.sq';
+
 error_log('Checking a stringify result in base 16 of version, encoding and number of pages SQLite::stranalyze($file, VERSION | PAGES | ENCODING)');
 $tmp = SQLite::stranalyze($file, VERSION | PAGES | ENCODING, 16);
 if($tmp === false)
@@ -54,6 +66,9 @@ else
  ```
  6. Let's check in base 10 a string of all properties from SQLite:
  ```
+ <?php
+$file = '/some/file.sq';
+
 error_log('Checking a stringify result in base 10 of ALL detected fields SQLite::stranalyze($file, -1)');
 $tmp = SQLite::stranalyze($file, -1);
 if($tmp === false)
@@ -63,6 +78,9 @@ else
 ```
  7. Let's check in base 16 previous string of all properties from SQLite:
 ```
+<?php
+$file = '/some/file.sq';
+
 error_log('Checking a stringify result in base 16 of ALL detected fields SQLite::stranalyze($file, -1, 16)');
 $tmp = SQLite::stranalyze($file, -1, 16);
 if($tmp === false)
