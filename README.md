@@ -10,9 +10,9 @@ $file = '/some/file.sq';
 
 error_log('Checking boolean result of SQLite::analyze($file)');
 if(SQLite::analyze($file))
-   error_log("The file {$file} is NOT SQLite db!");
-else
    error_log("The file {$file} IS SQLite db!");
+else
+   error_log("The file {$file} is NOT SQLite db!");
 ```
 2. **Array return**: Let's check in base 10 a array of specific properties from SQLite:
 ```
