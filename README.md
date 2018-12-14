@@ -2,7 +2,7 @@
 Some SQLite database utilities in php.
 --------------------------------------
 
-1. Let's check if a given file is SQLite:
+1. **Boolean return**: Let's check if a given file is SQLite:
 
 ```
 <?php
@@ -14,7 +14,7 @@ if(SQLite::analyze($file))
 else
    error_log("The file {$file} IS SQLite db!");
 ```
-2. Let's check in base 10 a array of specific properties from SQLite:
+2. **Array return**: Let's check in base 10 a array of specific properties from SQLite:
 ```
 <?php
 <?php
@@ -28,7 +28,7 @@ if($tmp === false)
 else
    error_log("The file {$file} info in base 10: ".print_r($tmp, true));
 ```
-3. Let's check in base 16 previous array of properties from SQLite:
+3. **Array return**: Let's check in base 16 previous array of properties from SQLite:
 ```
 <?php
 $file = '/some/file.sq';
@@ -40,7 +40,7 @@ if($tmp === false)
 else
    error_log("The file {$file} info in base 16: ".print_r($tmp, true));
 ```
-4. Let's check in base 10 a string of specific properties from SQLite:
+4. **String return**: Let's check in base 10 a string of specific properties from SQLite:
 ```
 <?php
 $file = '/some/file.sq';
@@ -52,7 +52,7 @@ if($tmp === false)
 else
    error_log("The file {$file} info in base 10: ".$tmp);
 ```
-5. Let's check in base 16 previous string of specific properties from SQLite:
+5. **String return**: Let's check in base 16 previous string of specific properties from SQLite:
 ```
 <?php
 $file = '/some/file.sq';
@@ -64,7 +64,7 @@ if($tmp === false)
 else
    error_log("The file {$file} info in base 16: ".$tmp);
  ```
- 6. Let's check in base 10 a string of all properties from SQLite:
+ 6. **String return**: Let's check in base 10 a string of all properties from SQLite:
  ```
  <?php
 $file = '/some/file.sq';
@@ -76,7 +76,7 @@ if($tmp === false)
 else
    error_log("The file {$file} info in base 10: ".$tmp);
 ```
- 7. Let's check in base 16 previous string of all properties from SQLite:
+ 7. **String return**: Let's check in base 16 previous string of all properties from SQLite:
 ```
 <?php
 $file = '/some/file.sq';
