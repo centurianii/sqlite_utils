@@ -29,6 +29,14 @@ if($tmp === false)
 else
    error_log("The file {$file} info in base 10: ".print_r($tmp, true));
 ```
+Sample output:
+>(
+>    [BASE] => 10
+>    [PAGES] => 35
+>    [ENCODING] => 1
+>    [VERSION] => 3011000
+>)
+
 3. **Array return**: Let's check in base 16 previous array of properties from SQLite:
 ```
 <?php
